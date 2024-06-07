@@ -6,7 +6,7 @@
 
 -- 1.	How many rows are in the data_analyst_jobs table?
 -- SELECT *
--- FROM data_analyst_jobs
+-- FROM data_analyst_jobs;
 
 -- 1793
 
@@ -21,21 +21,21 @@
 -- 3.	How many postings are in Tennessee? How many are there in either Tennessee or Kentucky?
 -- SELECT *
 -- FROM data_analyst_jobs
--- WHERE location = 'TN' [OR location = 'KY']
+-- WHERE location = 'TN' [OR location = 'KY'];
 
 --21 in Tennessee, 27 in TN or KY
 
 -- 4.	How many postings in Tennessee have a star rating above 4?
 -- SELECT *
 -- FROM data_analyst_jobs
--- WHERE location = 'TN' AND star_rating > 4
+-- WHERE location = 'TN' AND star_rating > 4;
 
 -- 3 postings
 
 -- 5.	How many postings in the dataset have a review count between 500 and 1000?
 -- SELECT *
 -- FROM data_analyst_jobs
--- WHERE review_count BETWEEN 500 AND 1000
+-- WHERE review_count BETWEEN 500 AND 1000;
 
 -- 151 postings
 
@@ -64,7 +64,7 @@
 
 -- SELECT DISTINCT(title)
 -- FROM data_analyst_jobs
--- WHERE location = 'CA'
+-- WHERE location = 'CA';
 
 -- 230 unique titles in Cali
 
@@ -73,7 +73,7 @@
 -- SELECT company, AVG(star_rating) AS avg_rating
 -- FROM data_analyst_jobs
 -- WHERE review_count > 5000
--- GROUP BY company
+-- GROUP BY company;
 
 -- 41 total companies with over 5000 reviews.
 
@@ -83,7 +83,7 @@
 -- FROM data_analyst_jobs
 -- WHERE review_count > 5000
 -- GROUP BY company
--- ORDER BY avg_rating DESC
+-- ORDER BY avg_rating DESC;
 
 -- General Motors holds an average rating of 4.19 stars.
 	
@@ -91,7 +91,7 @@
 
 -- SELECT DISTINCT(title)
 -- FROM data_analyst_jobs
--- WHERE title LIKE '%Analyst%'
+-- WHERE title LIKE '%Analyst%';
 
 -- 754 distinct titles containing the word 'Analyst'
 
@@ -106,7 +106,7 @@
 -- 	AND title NOT LIKE '%ANALYST%' 
 -- 	AND title NOT LIKE '%analyst%' 
 -- 	AND title NOT LIKE '%analytics%'	
--- 	AND title NOT LIKE '%ANALYTICS%'
+-- 	AND title NOT LIKE '%ANALYTICS%';
 
 -- the remaining 4 title all have tableau in common
 
@@ -127,7 +127,7 @@
 -- 	AND days_since_posting > 21
 -- GROUP BY 
 -- 	domain
--- ORDER BY count DESC
+-- ORDER BY count DESC;
 
 -- "Internet and Software"
 -- "Banks and Financial Services"
@@ -137,9 +137,9 @@
 
 
 
---- 
+--- checking my work by viewing the table for one of the results
 -- SELECT *
 -- FROM data_analyst_jobs
 -- WHERE domain = 'Banks and Financial Services'
 -- 	AND skill ILIKE '%SQL%'
--- 	ORDER BY days_since_posting DESC
+-- 	ORDER BY days_since_posting DESC;
